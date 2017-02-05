@@ -29,7 +29,7 @@ del verse4[2]
 
 #I originally did this without a for loop because I couldn't get the list to work
 #but I messed around for a while with the list and got it too work
-songList = verse1 + verse2 + verse3 + verse4
+songList = verse1 + verse2 + verse3 + verse4 
 
 print songList
 
@@ -43,9 +43,8 @@ for element in [0]:
     print songList[5]
     print songList[6]
     print songList[7]
-    
-print '...one more time...'
 
+print "...one more time..."
 for element in [0]:
     print songList[0]
     print songList[1]
