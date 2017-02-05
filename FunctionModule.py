@@ -9,3 +9,4 @@ def userString(prompt):
     print prompt,
     s = raw_input()
     return s
+
