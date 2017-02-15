@@ -38,7 +38,6 @@ speedersNotRush =countSpeeders(notRush)
 speedersRush= countSpeeders(rush)
 
 
-
 def main():
     print('The average speed during non rush hour is %.2f.') % avgNotRush
     print('The average speed during rush hour is %.2f.') % avgRush
