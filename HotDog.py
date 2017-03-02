@@ -46,7 +46,7 @@ def main():
         print('Would you like to play again (Type anything to continue, or type "No")'),
         keepPlaying = raw_input()
         print
-        if keepPlaying == 'No'or keepPlaying == 'NO':
+        if keepPlaying == 'No'or keepPlaying == 'NO' or keepPlaying == 'no':
             break
 #I spent a decent amount of time on this...
 #God knows if I did this right
