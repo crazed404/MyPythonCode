@@ -9,6 +9,7 @@ def getFrankNumbers():
         tomDogs = random.randrange(1, 6)
         sallyDogs = random.randrange(1, 6)
         fredDogs = random.randrange(1, 6)
+        #adds up hotdogs eaten each turn
         hotDogsEaten[0] = hotDogsEaten[0] + tomDogs
         hotDogsEaten[1] = hotDogsEaten[1] + sallyDogs
         hotDogsEaten[2] = hotDogsEaten[2] + fredDogs
@@ -16,7 +17,7 @@ def getFrankNumbers():
         print('Sally has eaten %s franks.' % hotDogsEaten[1])
         print('Fred has eaten %s franks.' % hotDogsEaten[2])
         print('\nChomp chomp chompity\n')
-        #time.sleep(1)
+        time.sleep(1)
     #compares the index of hotdogs eaten to find the max
     #so I can return it to another function that decides the winner
     global winner
@@ -28,10 +29,10 @@ def getFrankNumbers():
     elif winner == 2:
         winner = 'Fred'
     
-
 def getWinner():
     print('Who do you think will be the first to eat 50 franks?!? (Tom, Sally, Fred)'),
     userGuess = raw_input() 
+    print('\nRead...Set...Go!')
     print
     getFrankNumbers()
     if userGuess == winner:
@@ -40,6 +41,14 @@ def getWinner():
         print('Perhaps hot dog betting is not your thing.')
 
 def main():
-    getWinner()
+    while True:
+        getWinner()
+        print('Would you like to play again (Type anything to continue, or type "No")'),
+        keepPlaying = raw_input()
+        print
+        if keepPlaying == 'No'or keepPlaying == 'NO':
+            break
+#I spent a decent amount of time on this...
+#God knows if I did this right
 main()
     
