@@ -36,9 +36,9 @@ def getWinner():
     print
     getFrankNumbers()
     if userGuess == winner:
-        print('Congrats, you guessed correctly!')
+        print('Congrats, you guessed correctly!\n')
     else:
-        print('Perhaps hot dog betting is not your thing.')
+        print('Perhaps hot dog betting is not your thing.\n')
 
 def main():
     while True:
