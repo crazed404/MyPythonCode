@@ -1,7 +1,7 @@
 import random
 
 def playGame():
-    choices = ['bird', 'dog','snake', 'fish', 'cat', 'mouse', 'starfish', 'woodchuck','crab']
+    choices = ['bird', 'dog','snake', 'fish', 'cat', 'mouse', 'starfish', 'woodchuck', 'crab']
     r = random.randrange(0,8)
     choices.append(choices[r])
     random.shuffle(choices)
