@@ -4,8 +4,8 @@ def buildDeck():
     rank = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
     suit = ['Clubs', 'Hearts', 'Diamonds', 'Spades']
     deck = []
-    #for each rank adds suit each time
     
+    #for each rank adds suit each time
     for i in range(0,len(rank)):
         deck.append(rank[i] + ' of ' + suit[0])
         deck.append(rank[i] + ' of ' + suit[1])
@@ -18,7 +18,7 @@ def shuffle(deck):
     half1 = deck[:26]
     half2 = deck[26:]
    
-    #algo for the actual does the shuffling
+    #algo that does the actual shuffling
     for i in range(0,26):
         if i ==  0:
             shuffleDeck.append(half1[i])
@@ -35,7 +35,6 @@ def shuffle(deck):
     return shuffleDeck
     
 def deal(deck):
-
     hand = []
     i = 0
     print('How many times would you like to shuffle? '),
