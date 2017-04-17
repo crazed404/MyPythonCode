@@ -25,7 +25,7 @@ def searchJSON(file):
             jsonString = str(file[index]['Category'])
             jsonString = jsonString.lower()
             if  jsonString == category:
-                print ('%s %s') % (file[index]['Product'], file[index]['Price'])
+                print ('%s - $%s') % (file[index]['Product'], file[index]['Price'])
             index = index + 1
             
     if userIn == 'k':
